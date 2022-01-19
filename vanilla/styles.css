@@ -1,0 +1,243 @@
+/* General */
+:root {
+    --primary: #E79E4F;
+    --secondary: #6c757d99;
+    --light: #f8f9fa;
+    --dark: #212529;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all ease-in-out 250ms;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light);
+    color: var(--dark)
+}
+
+body>* {
+    width: 100%;
+}
+
+h3 {
+    letter-spacing: 0.2rem;
+}
+
+section,
+footer {
+    padding: 1rem 20%;
+}
+
+p {
+    margin: 1.5rem 0;
+    text-align: justify;
+}
+
+hr {
+    width: 150px;
+    margin-left: 20%;
+    border: 0;
+    border-bottom: 1px solid var(--dark);
+}
+
+/* Capçalera */
+header {
+    position: fixed;
+    background-color: var(--primary);
+    color: var(--dark);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+}
+
+header nav {
+    flex: 1;
+    text-align: right;
+    padding: 1rem;
+}
+
+header div,
+#mode,
+#lang {
+    margin: 0.2rem 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.5rem 0;
+    margin: 0 0.5rem;
+    color: var(--dark);
+    font-weight: 700;
+    transition: none;
+}
+
+nav a:hover {
+    border-bottom: 3px solid var(--dark);
+}
+
+#mode {
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    vertical-align: middle;
+}
+
+#mode-dark,
+#mode-light {
+    color: var(--dark);
+}
+
+header select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    color: var(--dark);
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 1rem;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+header select option {
+    background-color: var(--primary);
+    font-weight: 700;
+}
+
+
+/* Contingut */
+main {
+    flex: 1;
+    margin-top: 100px;
+}
+
+section .skills {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    margin: 1.5rem 0;
+}
+
+section .skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+progress::-webkit-progress-bar {
+    background-color: var(--light);
+    width: 100%;
+}
+
+progress::-webkit-progress-value {
+    background: repeating-linear-gradient(90deg, var(--primary), var(--primary) 8px, var(--light) 5px, var(--light) 12px);
+}
+
+section .skill progress {
+    -webkit-appearance: none;
+    appearance: none;
+    max-width: 90px;
+    background: var(--light) !important;
+    margin-top: 0.25rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+section .jobs {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 1.5rem 0;
+}
+
+section .job {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    background-color: var(--light);
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+section .job ul {
+    list-style: none;
+}
+
+section .job li {
+    text-align: left;
+    margin-top: 0.5rem;
+}
+
+section .job li::before {
+    content: "⌁ ";
+}
+
+section a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+section a:hover {
+    color: var(--dark);
+}
+
+/* Peu */
+footer {
+    text-align: right;
+    background-color: var(--secondary);
+}
+
+/* Responsive */
+@media screen and (max-width: 1380px) {
+    * {
+        scroll-padding-top: 0;
+    }
+
+    body {
+        flex-direction: column-reverse;
+    }
+
+    header,
+    section,
+    footer {
+        padding: 1rem 5%;
+    }
+
+    header {
+        position: sticky;
+        bottom: 0;
+        flex-direction: column-reverse;
+    }
+
+    header nav {
+        text-align: center;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    main {
+        margin-top: 0;
+    }
+
+    hr {
+        margin-left: 5%;
+    }
+}
