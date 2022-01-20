@@ -60,7 +60,7 @@
 		"jobs": [
 			{
 				"company": "Gatamagat, SCCL",
-				"dates": [2020, 2021],
+				"dates": [2020, "currently"],
 				"link": "https://recrea.team",
 				"name": "RecreaTeam",
 				"title": "Co-creation, programming and web development",
@@ -72,7 +72,7 @@
 			},
 			{
 				"company": "Gatamagat, SCCL",
-				"dates": [2017, "now"],
+				"dates": [2017, "currently"],
 				"link": "https://www.bizarrebcn.com/en/",
 				"name": "Bizarre Escape Room",
 				"title": "Co-founder and creator",
@@ -125,7 +125,7 @@
 		]
 	},
 	"es": {
-		"about": "<p>I consider myself a curious person. I enjoy participating in new projects and learning new things. The world of engineering has given me the opportunity to explore many different fields, such as mechanical design, project management, electronics, or programming.</p><p>It motivates me to participate in projects that have an impact beyond their functional purpose, especially related to the environment, cooperation and social change.</p>",
+		"about": "<p>Me considero una persona curiosa. Me gusta participar en nuevos proyectos y aprender cosas nuevas. El mundo de la ingeniería me ha aportado la posibilidad de explorar muchos campos diferentes, como el diseño mecánico, la gestión de proyectos, la electrónica o la programación.</p><p>Me motiva participar en proyectos que tingan un impacto más allá de su propósito funcional, especialmente relacionados con el medioambiente, la cooperación y el cambio social.</p>",
 		"titles": {
 			"menu": ["inicio", "formación", "experiencia", "habilidades", "contacto"],
 			"about": "sobre mi",
@@ -157,28 +157,28 @@
 		"jobs": [
 			{
 				"company": "Gatamagat, SCCL",
-				"dates": [2020, 2021],
+				"dates": [2020, "actulidad"],
 				"link": "https://recrea.team",
 				"name": "RecreaTeam",
-				"title": "Co-creation, programming and web development",
+				"title": "Cocreación, programación y desarrollo web",
 				"tasks": [
-					"Co-creation online games",
-					"Platform development and game manager (JavaScript, PHP, CSS, HTML, MySQL)",
-					"Video conferencing integration (Jitsi)"
+					"Cocreación de juegos online",
+					"Desarrollo plataforma y gestor del juego (Javascript, PHP, CSS, HTML, MySQL)",
+					"Integración videoconferencias (Jitsi)"
 				]
 			},
 			{
 				"company": "Gatamagat, SCCL",
-				"dates": [2017, "now"],
-				"link": "https://www.bizarrebcn.com/en/",
+				"dates": [2017, "actualidad"],
+				"link": "https://www.bizarrebcn.com/es/",
 				"name": "Bizarre Escape Room",
-				"title": "Co-founder and creator",
+				"title": "Cofundador y creador",
 				"tasks": [
-					"Design, programming and construction of widgets (Arduino)",
-					"Maintenance of game rooms",
-					"Administrative management",
+					"Diseño, programación y construcción de juegos (Arduino)",
+					"Mantenimiento de las salas de juego",
+					"Gestión administrativa",
 					"Game Master",
-					"Programming online game (PHP, Telegram)"
+					"Progración juegos online (PHP, Telegram)"
 				]
 			},
 			{
@@ -186,25 +186,25 @@
 				"dates": [2017, 2021],
 				"link": "https://www.mobba.es/",
 				"name": "",
-				"title": "Design, programming and electrical assembly",
+				"title": "Diseño, programación y montaje elèctric",
 				"tasks": [
-					"Design electrical diagrams",
-					"Assembly and start-up of weighing projects (packers, dispensers, online weighing)",
-					"Programming of robots dedicated to the packaging of products",
-					"PLC and HMI programming (Omron, Siemens, Pro-face)"
+					"Diseño esquemas eléctricos y neumáticos",
+					"Montaje y puesta en marcha de proyectos de pesaje (envasadoras, dosificadoras, pesaje en línea)",
+					"Programación de robots dedicados al envasado de productos",
+					"Programación de PLC y HMI (Omron, Siemens, Pro-face)"
 				]
 			},
 			{
 				"company": "Dallant SA",
 				"dates": [2009, 2016],
-				"link": "https://www.dallant.com/en/",
+				"link": "https://www.dallant.com/es/",
 				"name": "",
-				"title": "Project management",
+				"title": "Gestión de proyectos",
 				"tasks": [
-					"Monitoring and control of projects to adapt the manufacturing plant to ATEX regulations",
-					"New facilities and start-ups",
-					"Responsible for the process control and automation system (Siemens)",
-					"Responsible for waste management"
+					"Seguimiento y control de los proyectos de adecuación de la planta de fabricación a normativa ATEX",
+					"Nuevas instalaciones y puestas en marcha",
+					"Responsable del sistema de control de procesos y automatitzaciones (Siemens)",
+					"Responsable de la gestión de residuos"
 				]
 			},
 			{
@@ -212,11 +212,11 @@
 				"dates": [2007, 2009],
 				"link": "https://www.sinerges.com/",
 				"name": "",
-				"title": "Project design",
+				"title": "Diseño de proyectos",
 				"tasks": [
-					"Elaboration and execution of projects for the construction of machinery",
-					"Previous mechanical design for the preparation of offers (AutoCAD, Solid Edge)",
-					"Preparation of budgets, final design of work orders, constructive monitoring"
+					"Elaboración y ejecución de proyectos para la construcción de maquinaria",
+					"Diseño mecánico previo para la elaboración de ofertas (AutoCAD, Solid Edge)",
+					"Preparación de presupuestos, diseño definitivo de órdenes de trabajo, seguimient constructivo"
 				]
 			}
 		]
@@ -253,7 +253,7 @@
 		"jobs": [
 			{
 				"company": "Gatamagat, SCCL",
-				"dates": [2020, 2021],
+				"dates": [2020, "actulitat"],
 				"link": "https://recrea.team",
 				"name": "RecreaTeam",
 				"title": "Cocreació, programació i desenvolupament web",
@@ -265,8 +265,8 @@
 			},
 			{
 				"company": "Gatamagat, SCCL",
-				"dates": [2017, "now"],
-				"link": "https://www.bizarrebcn.com/en/",
+				"dates": [2017, "actualitat"],
+				"link": "https://www.bizarrebcn.com/ca/",
 				"name": "Bizarre Escape Room",
 				"title": "Cofundador i creador",
 				"tasks": [
@@ -287,13 +287,13 @@
 					"Disseny esquemes elèctrics i pneumàtics",
 					"Muntatge i posada en marxa de projectes de pesatge (envasadores, dosificadores, pesatge en línia)",
 					"Programació de robots dedicats a l'envasat de productes",
-					"Programació de PLC i HMI (Omron, Siemens, Pro-face...)"
+					"Programació de PLC i HMI (Omron, Siemens, Pro-face)"
 				]
 			},
 			{
 				"company": "Dallant SA",
 				"dates": [2009, 2016],
-				"link": "https://www.dallant.com/en/",
+				"link": "https://www.dallant.com/ca/",
 				"name": "",
 				"title": "Gestió de projectes",
 				"tasks": [
@@ -311,8 +311,8 @@
 				"title": "Disseny de projectes",
 				"tasks": [
 					"Elaboració i execució de projectes per la construcció de maquinària",
-					"Disseny mecànic previ per el·laboració d’ofertes (AutoCAD, Solid Edge)",
-					"Preparació de pressupostos, disseny definitiu d’ordres de treball, seguiment constructiu"
+					"Disseny mecànic previ per el·laboració d'ofertes (AutoCAD, Solid Edge)",
+					"Preparació de pressupostos, disseny definitiu d'ordres de treball, seguiment constructiu"
 				]
 			}
 		]
