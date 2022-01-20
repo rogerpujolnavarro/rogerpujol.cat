@@ -1,17 +1,19 @@
 {
 	"contact": {
 		"mail": "hola@rogerpujol.cat",
-		"location": "barcelona",
-		"linkedin": "https://www.linkedin.com/in/rogerpujolnavarro/",
-		"github": "https://github.com/rogerpujolnavarro"
+		"location": "Barcelona",
+		"social": [
+			{ "name": "linkedin", "link": "https://www.linkedin.com/in/rogerpujolnavarro/" },
+			{ "name": "github", "link": "https://github.com/rogerpujolnavarro" }
+		]
 	},
 	"skills": [
 		{ "skill": "JavaScript", "value": 90 },
 		{ "skill": "CSS", "value": 80 },
-		{ "skill": "React JS", "value": 70 },
+		{ "skill": "ReactJS", "value": 70 },
 		{ "skill": "Bootstrap", "value": 90 },
 		{ "skill": "HTML", "value": 100 },
-		{ "skill": "React Native", "value": 50 },
+		{ "skill": "ReactNative", "value": 50 },
 		{ "skill": "PHP", "value": 80 },
 		{ "skill": "MySQL", "value": 50 },
 		{ "skill": "C# Arduino", "value": 70 },
@@ -19,13 +21,15 @@
 		{ "skill": "Git", "value": 40 },
 		{ "skill": "Office", "value": 100 },
 		{ "skill": "Linux", "value": 60 },
-		{ "skill": "Siemens TIA PORTAL", "value": 60 },
-		{ "skill": "Omron CX-Programmer", "value": 60 },
-		{ "skill": "Firebase", "value": 30 }
+		{ "skill": "Siemens", "value": 60 },
+		{ "skill": "Omron", "value": 60 },
+		{ "skill": "Firebase", "value": 30 },
+		{ "skill": "Trello", "value": 60 }
 	],
 	"en": {
-		"about": "I consider myself a curious person. I enjoy participating in new projects and learning new things. The world of engineering has given me the opportunity to explore many different fields, such as mechanical design, project management, electronics, or programming. It motivates me to participate in projects that have an impact beyond their functional purpose, especially related to the environment, cooperation and social change.",
+		"about": "<p>I consider myself a curious person. I enjoy participating in new projects and learning new things. The world of engineering has given me the opportunity to explore many different fields, such as mechanical design, project management, electronics, or programming.</p><p>It motivates me to participate in projects that have an impact beyond their functional purpose, especially related to the environment, cooperation and social change.</p>",
 		"titles": {
+			"menu": ["home", "education", "experience", "skills", "contact"],
 			"about": "about",
 			"contact": "contact",
 			"education": "education",
@@ -45,6 +49,103 @@
 			},
 			{
 				"title": "Web development frontend",
+				"year": 2021,
+				"school": "CIFO L'Hospitalet de Llobregat",
+				"link": {
+					"text": "CIFO",
+					"link": "https://serveiocupacio.gencat.cat/ca/Formacio-i-qualificacio/centres-propis-de-formacio/centres-dinnovacio-i-formacio-ocupacional-cifo/CIFO-de-LHospitalet-de-Llobregat/"
+				}
+			}
+		],
+		"jobs": [
+			{
+				"company": "Gatamagat, SCCL",
+				"dates": [2020, 2021],
+				"link": "https://recrea.team",
+				"name": "RecreaTeam",
+				"title": "Co-creation, programming and web development",
+				"tasks": [
+					"Co-creation online games",
+					"Platform development and game manager (JavaScript, PHP, CSS, HTML, MySQL)",
+					"Video conferencing integration (Jitsi)"
+				]
+			},
+			{
+				"company": "Gatamagat, SCCL",
+				"dates": [2017, "now"],
+				"link": "https://www.bizarrebcn.com/en/",
+				"name": "Bizarre Escape Room",
+				"title": "Co-founder and creator",
+				"tasks": [
+					"Design, programming and construction of widgets (Arduino)",
+					"Maintenance of game rooms",
+					"Administrative management",
+					"Game Master",
+					"Online game programming (PHP, Telegram)"
+				]
+			},
+			{
+				"company": "Mobba Industrial Catalunya SA",
+				"dates": [2017, 2021],
+				"link": "https://www.mobba.es/",
+				"name": "",
+				"title": "Design, programming and electrical assembly",
+				"tasks": [
+					"Design electrical and pneumatic diagrams",
+					"Assembly and start-up of weighing projects (packers, dispensers, online weighing)",
+					"Programming of robots dedicated to the packaging of products",
+					"PLC and HMI programming (Omron, Siemens, Pro-face)"
+				]
+			},
+			{
+				"company": "Dallant SA",
+				"dates": [2009, 2016],
+				"link": "https://www.dallant.com/en/",
+				"name": "",
+				"title": "Project management",
+				"tasks": [
+					"Monitoring and control of projects to adapt the manufacturing plant to ATEX regulations",
+					"New facilities and start-ups",
+					"Responsible for the process control and automation system (Siemens)",
+					"Responsible for waste management"
+				]
+			},
+			{
+				"company": "Sinerges Tecmon SA",
+				"dates": [2007, 2009],
+				"link": "https://www.sinerges.com/",
+				"name": "",
+				"title": "Project design",
+				"tasks": [
+					"Elaboration and execution of projects for the construction of machinery",
+					"Previous mechanical design for the preparation of offers (AutoCAD, Solid Edge)",
+					"Preparation of budgets, final design of work orders, constructive monitoring"
+				]
+			}
+		]
+	},
+	"es": {
+		"about": "<p>I consider myself a curious person. I enjoy participating in new projects and learning new things. The world of engineering has given me the opportunity to explore many different fields, such as mechanical design, project management, electronics, or programming.</p><p>It motivates me to participate in projects that have an impact beyond their functional purpose, especially related to the environment, cooperation and social change.</p>",
+		"titles": {
+			"menu": ["inicio", "formación", "experiencia", "habilidades", "contacto"],
+			"about": "sobre mi",
+			"contact": "contacto",
+			"education": "formación",
+			"experience": "experiencia laboral",
+			"languages": "languages",
+			"skills": "habilidades",
+			"subtitle": "ingeniero industrial",
+			"title": "roger pujol navarro"
+		},
+		"education": [
+			{
+				"title": "Ingeniería industrial",
+				"year": 2010,
+				"school": "Universitat Politècnica de Catalunya",
+				"link": { "text": "UPC", "link": "https://www.upc.edu/" }
+			},
+			{
+				"title": "Desarrollo web frontend",
 				"year": 2021,
 				"school": "CIFO L'Hospitalet de Llobregat",
 				"link": {
@@ -116,6 +217,102 @@
 					"Elaboration and execution of projects for the construction of machinery",
 					"Previous mechanical design for the preparation of offers (AutoCAD, Solid Edge)",
 					"Preparation of budgets, final design of work orders, constructive monitoring"
+				]
+			}
+		]
+	},
+	"ca": {
+		"about": "<p>Em considero una persona curiosa. M'agrada participar en nous projectes i aprendre coses noves. El món de l'enginyeria m'ha aportat la possibilitat d'explorar molts camps diferents, com ara el disseny mecànic, la gestió de projectes, l'electrònica o la programació.</p><p>Em motiva participar en projectes que tinguin un impacte més enllà del seu propòsit funcional, especialment relacionats amb el mediambient, la cooperació i el canvi social.</p>",
+		"titles": {
+			"menu": ["inici", "formació", "experiència", "habilitats", "contacte"],
+			"about": "sobre mi",
+			"contact": "contacte",
+			"education": "formació",
+			"experience": "experiència laboral",
+			"skills": "habilitats",
+			"subtitle": "enginyer industrial",
+			"title": "roger pujol navarro"
+		},
+		"education": [
+			{
+				"title": "Enginyeria industrial",
+				"year": 2010,
+				"school": "Universitat Politècnica de Catalunya",
+				"link": { "text": "UPC", "link": "https://www.upc.edu/" }
+			},
+			{
+				"title": "Desenvolupament web frontend",
+				"year": 2021,
+				"school": "CIFO L'Hospitalet de Llobregat",
+				"link": {
+					"text": "CIFO",
+					"link": "https://serveiocupacio.gencat.cat/ca/Formacio-i-qualificacio/centres-propis-de-formacio/centres-dinnovacio-i-formacio-ocupacional-cifo/CIFO-de-LHospitalet-de-Llobregat/"
+				}
+			}
+		],
+		"jobs": [
+			{
+				"company": "Gatamagat, SCCL",
+				"dates": [2020, 2021],
+				"link": "https://recrea.team",
+				"name": "RecreaTeam",
+				"title": "Cocreació, programació i desenvolupament web",
+				"tasks": [
+					"Cocreació de jocs online",
+					"Desenvolupament plataforma i gestor de joc (Javascript, PHP, CSS, HTML, MySQL)",
+					"Integració videoconferències (Jitsi)"
+				]
+			},
+			{
+				"company": "Gatamagat, SCCL",
+				"dates": [2017, "now"],
+				"link": "https://www.bizarrebcn.com/en/",
+				"name": "Bizarre Escape Room",
+				"title": "Cofundador i creador",
+				"tasks": [
+					"Disseny, programació i construcció de ginys (Arduino)",
+					"Manteniment de les sales de joc",
+					"Gestió administrativa",
+					"Game Master",
+					"Progració jocs online (PHP, Telegram)"
+				]
+			},
+			{
+				"company": "Mobba Industrial Catalunya SA",
+				"dates": [2017, 2021],
+				"link": "https://www.mobba.es/",
+				"name": "",
+				"title": "Disseny, programació i muntatge elèctric",
+				"tasks": [
+					"Disseny esquemes elèctrics i pneumàtics",
+					"Muntatge i posada en marxa de projectes de pesatge (envasadores, dosificadores, pesatge en línia)",
+					"Programació de robots dedicats a l'envasat de productes",
+					"Programació de PLC i HMI (Omron, Siemens, Pro-face...)"
+				]
+			},
+			{
+				"company": "Dallant SA",
+				"dates": [2009, 2016],
+				"link": "https://www.dallant.com/en/",
+				"name": "",
+				"title": "Gestió de projectes",
+				"tasks": [
+					"Seguiment i control dels projectes d'adequació de la planta de fabricació a normativa ATEX",
+					"Noves instal·lacions i posades en marxa",
+					"Responsable del sistema de control de processos i automatitzacions (Siemens)",
+					"Responsable de la gestió de residus"
+				]
+			},
+			{
+				"company": "Sinerges Tecmon SA",
+				"dates": [2007, 2009],
+				"link": "https://www.sinerges.com/",
+				"name": "",
+				"title": "Disseny de projectes",
+				"tasks": [
+					"Elaboració i execució de projectes per la construcció de maquinària",
+					"Disseny mecànic previ per el·laboració d’ofertes (AutoCAD, Solid Edge)",
+					"Preparació de pressupostos, disseny definitiu d’ordres de treball, seguiment constructiu"
 				]
 			}
 		]
