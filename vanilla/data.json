@@ -1,0 +1,123 @@
+{
+	"contact": {
+		"mail": "hola@rogerpujol.cat",
+		"location": "barcelona",
+		"linkedin": "https://www.linkedin.com/in/rogerpujolnavarro/",
+		"github": "https://github.com/rogerpujolnavarro"
+	},
+	"skills": [
+		{ "skill": "JavaScript", "value": 90 },
+		{ "skill": "CSS", "value": 80 },
+		{ "skill": "React JS", "value": 70 },
+		{ "skill": "Bootstrap", "value": 90 },
+		{ "skill": "HTML", "value": 100 },
+		{ "skill": "React Native", "value": 50 },
+		{ "skill": "PHP", "value": 80 },
+		{ "skill": "MySQL", "value": 50 },
+		{ "skill": "C# Arduino", "value": 70 },
+		{ "skill": "Node.js", "value": 55 },
+		{ "skill": "Git", "value": 40 },
+		{ "skill": "Office", "value": 100 },
+		{ "skill": "Linux", "value": 60 },
+		{ "skill": "Siemens TIA PORTAL", "value": 60 },
+		{ "skill": "Omron CX-Programmer", "value": 60 },
+		{ "skill": "Firebase", "value": 30 }
+	],
+	"en": {
+		"about": "I consider myself a curious person. I enjoy participating in new projects and learning new things. The world of engineering has given me the opportunity to explore many different fields, such as mechanical design, project management, electronics, or programming. It motivates me to participate in projects that have an impact beyond their functional purpose, especially related to the environment, cooperation and social change.",
+		"titles": {
+			"about": "about",
+			"contact": "contact",
+			"education": "education",
+			"experience": "experience",
+			"languages": "languages",
+			"other": "others",
+			"skills": "skills",
+			"subtitle": "industrial engineer",
+			"title": "roger pujol navarro"
+		},
+		"education": [
+			{
+				"title": "Industrial engineering",
+				"year": 2010,
+				"school": "Universitat Politècnica de Catalunya",
+				"link": { "text": "UPC", "link": "https://www.upc.edu/" }
+			},
+			{
+				"title": "Web development frontend",
+				"year": 2021,
+				"school": "CIFO L'Hospitalet de Llobregat",
+				"link": {
+					"text": "CIFO",
+					"link": "https://serveiocupacio.gencat.cat/ca/Formacio-i-qualificacio/centres-propis-de-formacio/centres-dinnovacio-i-formacio-ocupacional-cifo/CIFO-de-LHospitalet-de-Llobregat/"
+				}
+			}
+		],
+		"jobs": [
+			{
+				"company": "Gatamagat, SCCL",
+				"dates": [2020, 2021],
+				"link": "https://recrea.team",
+				"name": "RecreaTeam",
+				"title": "Co-creation, programming and web development",
+				"tasks": [
+					"Co-creation online games",
+					"Platform development and game manager (JavaScript, PHP, CSS, HTML, MySQL)",
+					"Video conferencing integration (Jitsi)"
+				]
+			},
+			{
+				"company": "Gatamagat, SCCL",
+				"dates": [2017, "now"],
+				"link": "https://www.bizarrebcn.com/en/",
+				"name": "Bizarre Escape Room",
+				"title": "Co-founder and creator",
+				"tasks": [
+					"Design, programming and construction of widgets (Arduino)",
+					"Maintenance of game rooms",
+					"Administrative management",
+					"Game Master",
+					"Programming online game (PHP, Telegram)"
+				]
+			},
+			{
+				"company": "Mobba Industrial Catalunya SA",
+				"dates": [2017, 2021],
+				"link": "https://www.mobba.es/",
+				"name": "",
+				"title": "Design, programming and electrical assembly",
+				"tasks": [
+					"Design electrical diagrams",
+					"Assembly and start-up of weighing projects (packers, dispensers, online weighing)",
+					"Programming of robots dedicated to the packaging of products",
+					"PLC and HMI programming (Omron, Siemens, Pro-face)"
+				]
+			},
+			{
+				"company": "Dallant SA",
+				"dates": [2009, 2016],
+				"link": "https://www.dallant.com/en/",
+				"name": "",
+				"title": "Project management",
+				"tasks": [
+					"Monitoring and control of projects to adapt the manufacturing plant to ATEX regulations",
+					"New facilities and start-ups",
+					"Responsible for the process control and automation system (Siemens)",
+					"Responsible for waste management"
+				]
+			},
+			{
+				"company": "Sinerges Tecmon SA",
+				"dates": [2007, 2009],
+				"link": "https://www.sinerges.com/",
+				"name": "",
+				"title": "Project design",
+				"tasks": [
+					"Elaboration and execution of projects for the construction of machinery",
+					"Previous mechanical design for the preparation of offers (AutoCAD, Solid Edge)",
+					"Preparation of budgets, final design of work orders, constructive monitoring"
+				]
+			}
+		]
+	}
+}
