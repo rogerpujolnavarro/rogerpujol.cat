@@ -67,12 +67,6 @@ header nav {
     padding: 1rem;
 }
 
-header div,
-#mode,
-#color {
-    margin: 0 1rem;
-}
-
 nav a {
     text-decoration: none;
     padding: 0.5rem 0;
@@ -86,8 +80,12 @@ nav a:hover {
     border-bottom: 3px solid var(--dark);
 }
 
-#mode,
-#color {
+header div,
+header button {
+    margin: 0 1rem;
+}
+
+header button {
     cursor: pointer;
     border: 0;
     background-color: transparent;
@@ -114,6 +112,14 @@ nav a:hover {
     font-family: inherit;
     font-size: inherit;
     cursor: pointer;
+}
+
+#show-menu {
+    display: none;
+}
+
+.rot180 {
+    transform: rotate(180deg);
 }
 
 header select option {
@@ -238,10 +244,25 @@ footer {
         flex-direction: column-reverse;
     }
 
+    header div:not(#menu > div) {
+        display: none;
+    }
+
     header nav {
+        display: flex;
+        align-items: center;
+    }
+
+    header nav div {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    #show-menu {
+        display: block;
+        height: 40px;
+        width: 40px;
     }
 
     #subtitle {
