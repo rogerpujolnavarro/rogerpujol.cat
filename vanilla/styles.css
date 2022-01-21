@@ -1,6 +1,7 @@
 /* General */
 :root {
-    --primary: #E79E4F;
+    /* --primary: #E79E4F; */
+    --primary: #ca6702;
     --secondary: #6c757d99;
     --light: #f8f9fa;
     --dark: #212529;
@@ -135,10 +136,21 @@ section a:hover {
     color: var(--dark);
 }
 
-section .skills {
+section .skills,
+section .jobs {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    margin: 1.5rem 0;
+}
+
+section .jobs {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+section .info {
+    display: flex;
+    gap: 3rem;
     margin: 1.5rem 0;
 }
 
@@ -167,12 +179,7 @@ section .skill progress {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-section .jobs {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    margin: 1.5rem 0;
-}
+
 
 section .job {
     display: flex;

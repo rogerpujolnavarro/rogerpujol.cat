@@ -92,9 +92,11 @@ const loadTexts = async () => {
 
 			// Contacte
 			$('#contact h3').textContent = data[lang].titles.contact;
-			$('#contact span').textContent = data.contact.location;
-			$('#contact a').setAttribute('href', `mailto:${data.contact.mail}`);
-			$('#contact a').textContent = data.contact.mail;
+			$('#location').textContent = data.contact.location;
+			$('#mail').setAttribute('href', `mailto:${data.contact.mail}`);
+			$('#mail').textContent = data.contact.mail;
+			$('#pdf').setAttribute('href', `cv_${lang}.pdf`);
+			$('#pdf').textContent = 'pdf';
 
 			// Peu
 			const nav = document.createElement('nav');
