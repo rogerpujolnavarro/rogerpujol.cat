@@ -1,7 +1,6 @@
 /* General */
 :root {
-    /* --primary: #E79E4F; */
-    --primary: #ca6702;
+    /* --primary: #e79e4f; */
     --secondary: #6c757d99;
     --light: #f8f9fa;
     --dark: #212529;
@@ -71,6 +70,7 @@ header nav {
 
 header div,
 #mode,
+#color,
 #lang {
     margin: 0.2rem 1rem;
 }
@@ -88,7 +88,8 @@ nav a:hover {
     border-bottom: 3px solid var(--dark);
 }
 
-#mode {
+#mode,
+#color {
     cursor: pointer;
     border: 0;
     background-color: transparent;
@@ -96,8 +97,10 @@ nav a:hover {
 }
 
 #mode-dark,
-#mode-light {
+#mode-light,
+#sel-color {
     color: var(--dark);
+    display: block;
 }
 
 header select {
@@ -243,6 +246,11 @@ footer {
         text-align: center;
         display: flex;
         flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    #subtitle {
+        text-align: center;
     }
 
     main {

@@ -117,7 +117,6 @@ const loadTexts = async () => {
 		: navigatorLang.includes('es')
 		? 'es'
 		: 'en';
-
 	const usrLang = localStorage.getItem('userLang')
 		? localStorage.getItem('userLang')
 		: navigatorLang;
@@ -131,6 +130,7 @@ const loadTexts = async () => {
 		changeTexts(e.target.value);
 	});
 };
+
 // Configuració color pàgina
 const configMode = () => {
 	const changeMode = (mode) => {
@@ -164,6 +164,25 @@ const configMode = () => {
 	});
 };
 
+// Configuració color principal
+const configColor = () => {
+	const rndColor = (colors) => {
+		return colors[Math.floor(Math.random() * colors.length)];
+	};
+	const colors = ['#e79e4f', '#ccd5ae', '#0077b6', '#e9c46a', '#2a9d8f'];
+	localStorage.getItem('usrColor')
+		? localStorage.getItem('usrColor')
+		: localStorage.setItem('usrColor', rndColor(colors));
+	let usrColor = localStorage.getItem('usrColor');
+	document.documentElement.style.setProperty('--primary', usrColor);
+	$('#color').addEventListener('click', () => {
+		localStorage.setItem('usrColor', rndColor(colors));
+		usrColor = localStorage.getItem('usrColor');
+		document.documentElement.style.setProperty('--primary', usrColor);
+	});
+};
+
 // Crida funcions
 loadTexts();
 configMode();
+configColor();
