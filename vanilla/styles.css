@@ -92,6 +92,10 @@ header button {
     vertical-align: middle;
 }
 
+header div:not(#menu > div) {
+    display: block;
+}
+
 #mode-dark,
 #mode-light,
 #sel-color {
@@ -261,8 +265,9 @@ footer {
 
     #show-menu {
         display: block;
-        height: 40px;
-        width: 40px;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
     }
 
     #subtitle {

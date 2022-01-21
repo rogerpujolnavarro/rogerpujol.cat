@@ -189,9 +189,7 @@ const showMenu = () => {
 	$('#show-menu').addEventListener('click', () => {
 		$('#show-menu').classList.toggle('rot180');
 		$$('header div:not(#menu > div)').forEach((el) =>
-			el.style.display === '' || el.style.display === 'none'
-				? (el.style.display = 'block')
-				: (el.style.display = 'none')
+			el.style.display === '' ? (el.style.display = 'block') : el.removeAttribute('style')
 		);
 	});
 };
