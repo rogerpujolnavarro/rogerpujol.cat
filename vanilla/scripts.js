@@ -44,13 +44,13 @@ const changeTexts = async (lang) => {
 		data[lang].education
 			.sort((ed1, ed2) => ed2.year - ed1.year)
 			.map(async (educ) => {
-				const temp = await getTemplate('education');
-				$('h4', temp).textContent = educ.title;
-				$('.school', temp).textContent = educ.school;
-				$('a', temp).textContent = educ.link.text;
-				$('a', temp).setAttribute('href', educ.link.link);
-				$('.date', temp).textContent = educ.year;
-				$('.educations').appendChild(temp);
+				const template = await getTemplate('education');
+				$('h4', template).textContent = educ.title;
+				$('.school', template).textContent = educ.school;
+				$('a', template).textContent = educ.link.text;
+				$('a', template).setAttribute('href', educ.link.link);
+				$('.date', template).textContent = educ.year;
+				$('.educations').appendChild(template);
 			});
 
 		// Experiència
@@ -59,18 +59,18 @@ const changeTexts = async (lang) => {
 		data[lang].jobs
 			.sort((job1, job2) => job2.dates[0] - job1.dates[0])
 			.map(async (job) => {
-				const temp = await getTemplate('experience');
-				$('h4', temp).textContent = job.title;
-				$('a', temp).textContent =
+				const template = await getTemplate('experience');
+				$('h4', template).textContent = job.title;
+				$('a', template).textContent =
 					job.name !== '' ? `${job.name} - ${job.company}` : job.company;
-				$('a', temp).setAttribute('href', job.link);
-				$('.date', temp).textContent = `${job.dates[0]} - ${job.dates[1]}`;
+				$('a', template).setAttribute('href', job.link);
+				$('.date', template).textContent = `${job.dates[0]} - ${job.dates[1]}`;
 				job.tasks.map((task) => {
 					const li = document.createElement('li');
 					li.textContent = task;
-					$('ul', temp).appendChild(li);
+					$('ul', template).appendChild(li);
 				});
-				$('.jobs').appendChild(temp);
+				$('.jobs').appendChild(template);
 			});
 
 		// Habilitats
