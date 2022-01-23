@@ -102,7 +102,7 @@ const changeTexts = async (lang) => {
 		$('#location').textContent = data.contact.location;
 		$('#mail').setAttribute('href', `mailto:${data.contact.mail}`);
 		$('#mail').textContent = data.contact.mail;
-		$('#pdf').setAttribute('href', `cv_${lang}.pdf`);
+		$('#pdf').setAttribute('href', `pdf/cv_${lang}.pdf`);
 		$('#pdf').textContent = 'pdf';
 
 		// Peu
