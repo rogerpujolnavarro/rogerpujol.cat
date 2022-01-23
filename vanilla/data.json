@@ -27,7 +27,7 @@
 		{ "skill": "Trello", "value": 60 }
 	],
 	"en": {
-		"about": "<p>I consider myself a curious person. I enjoy participating in new projects and learning new things. The world of engineering has given me the opportunity to explore many different fields, such as mechanical design, project management, electronics, or programming.</p><p>It motivates me to participate in projects that have an impact beyond their functional purpose, especially related to the environment, cooperation and social change.</p>",
+		"about": "<p>Curious and passionate about the engineering field, I'm looking forward to new professional project allowing me to acquire new knowledge within the web programming area.</p><p>The last ten years, the engineering work field has provided me the possibility to explore a vast range of specialties, such as mechanical design, project management and electronics. During the last period, I've been specially focused on programming, work field that I'm going deeper into.</p><p>I'm keen to participate in this kind of projects going beyond a functional purpose, particularly if they are related to environmentalism, human cooperation, and social change.</p>",
 		"titles": {
 			"menu": ["home", "education", "experience", "skills", "contact"],
 			"about": "about",
@@ -66,7 +66,7 @@
 				"title": "Co-creation, programming and web development",
 				"tasks": [
 					"Co-creation online games",
-					"Platform development and game manager (JavaScript, PHP, CSS, HTML, MySQL)",
+					"Web development including a dashboard (JavaScript, PHP, CSS, HTML, MySQL)",
 					"Video conferencing integration (Jitsi)"
 				]
 			},
@@ -77,8 +77,8 @@
 				"name": "Bizarre Escape Room",
 				"title": "Co-founder and creator",
 				"tasks": [
-					"Design, programming and construction of widgets (Arduino)",
-					"Maintenance of game rooms",
+					"Design, programming and assembling of widgets (Arduino)",
+					"Playrooms maintenance",
 					"Administrative management",
 					"Game Master",
 					"Online game programming (PHP, Telegram)"
@@ -91,9 +91,10 @@
 				"name": "",
 				"title": "Design, programming and electrical assembly",
 				"tasks": [
+					"Project managment",
 					"Design electrical and pneumatic diagrams",
-					"Assembly and start-up of weighing projects (packers, dispensers, online weighing)",
-					"Programming of robots dedicated to the packaging of products",
+					"Weighing machinery assembly and commissioning (packers, dispensers, online weighing)",
+					"Filling robots programming",
 					"PLC and HMI programming (Omron, Siemens, Pro-face)"
 				]
 			},
@@ -104,10 +105,10 @@
 				"name": "",
 				"title": "Project management",
 				"tasks": [
-					"Monitoring and control of projects to adapt the manufacturing plant to ATEX regulations",
-					"New facilities and start-ups",
-					"Responsible for the process control and automation system (Siemens)",
-					"Responsible for waste management"
+					"Assuring and monitoring procedures to meet ATEX policies and regulations within the manufacturing plant",
+					"Controller for the new facilities and comissions",
+					"Accountable for the controlling process and automation system (Siemens)",
+					"Accountable for waste management"
 				]
 			},
 			{
@@ -117,15 +118,15 @@
 				"name": "",
 				"title": "Project design",
 				"tasks": [
-					"Elaboration and execution of projects for the construction of machinery",
-					"Previous mechanical design for the preparation of offers (AutoCAD, Solid Edge)",
-					"Preparation of budgets, final design of work orders, constructive monitoring"
+					"Project development and machinery assembly execution",
+					"Drafting offer mechanical designs (AutoCAD, Solid Edge)",
+					"Budget planning, work orders performing and assembling follow-up"
 				]
 			}
 		]
 	},
 	"es": {
-		"about": "<p>Me considero una persona curiosa. Me gusta participar en nuevos proyectos y aprender cosas nuevas. El mundo de la ingeniería me ha aportado la posibilidad de explorar muchos campos diferentes, como el diseño mecánico, la gestión de proyectos, la electrónica o la programación.</p><p>Me motiva participar en proyectos que tingan un impacto más allá de su propósito funcional, especialmente relacionados con el medioambiente, la cooperación y el cambio social.</p>",
+		"about": "<p>Curioso y apasionado acerca del mundo de la ingeniería, busco un nuevo proyecto profesional que me permita adentrarme en nuevos proyectos y aprendizajes en el campo de la programación web.</p><p>Los últimos diez años, el mundo de la ingeniería me ha aportado la posibilidad de explorar muchos campo diferentes, como el diseño mecánico, la gestión de proyectos o la electrónica. En los últimos tiempos me he centrado en la programación, campo en el que estoy focalizado en la actualidad.</p><p>Me motiva participar en proyectos que vayan más allá del propósito funcional, especialmente aquellos relacionados con el medioambiente, el cooperativismo y el cambio social.</p>",
 		"titles": {
 			"menu": ["inicio", "formación", "experiencia", "habilidades", "contacto"],
 			"about": "sobre mi",
@@ -157,13 +158,13 @@
 		"jobs": [
 			{
 				"company": "Gatamagat, SCCL",
-				"dates": [2020, "actulidad"],
+				"dates": [2020, "actualidad"],
 				"link": "https://recrea.team",
 				"name": "RecreaTeam",
 				"title": "Cocreación, programación y desarrollo web",
 				"tasks": [
 					"Cocreación de juegos online",
-					"Desarrollo plataforma y gestor del juego (Javascript, PHP, CSS, HTML, MySQL)",
+					"Desarrollo web incluyendo panel de control (Javascript, PHP, CSS, HTML, MySQL)",
 					"Integración videoconferencias (Jitsi)"
 				]
 			},
@@ -178,7 +179,7 @@
 					"Mantenimiento de las salas de juego",
 					"Gestión administrativa",
 					"Game Master",
-					"Progración juegos online (PHP, Telegram)"
+					"Programación juegos online (PHP, Telegram)"
 				]
 			},
 			{
@@ -188,6 +189,7 @@
 				"name": "",
 				"title": "Diseño, programación y montaje elèctric",
 				"tasks": [
+					"Gestión de proyectos",
 					"Diseño esquemas eléctricos y neumáticos",
 					"Montaje y puesta en marcha de proyectos de pesaje (envasadoras, dosificadoras, pesaje en línea)",
 					"Programación de robots dedicados al envasado de productos",
@@ -216,13 +218,13 @@
 				"tasks": [
 					"Elaboración y ejecución de proyectos para la construcción de maquinaria",
 					"Diseño mecánico previo para la elaboración de ofertas (AutoCAD, Solid Edge)",
-					"Preparación de presupuestos, diseño definitivo de órdenes de trabajo, seguimient constructivo"
+					"Preparación de presupuestos, órdenes de trabajo y seguimiento constructivo"
 				]
 			}
 		]
 	},
 	"ca": {
-		"about": "<p>Em considero una persona curiosa. M'agrada participar en nous projectes i aprendre coses noves. El món de l'enginyeria m'ha aportat la possibilitat d'explorar molts camps diferents, com ara el disseny mecànic, la gestió de projectes, l'electrònica o la programació.</p><p>Em motiva participar en projectes que tinguin un impacte més enllà del seu propòsit funcional, especialment relacionats amb el mediambient, la cooperació i el canvi social.</p>",
+		"about": "<p>Curiós i apassionat del món de l'enginyeria, busco un nou projecte professional que em permeti endinsar-me en nous projectes i aprenentatges en el camp de la programació web.</p><p>Els últims 10 anys, el món de l'enginyeria m'ha aportat la possibilitat d'explorar molts camps diferents, com ara el disseny mecànic, la gestió de projectes i l'electrònica. Els últims temps he estat centrat en programació, camp d'especialització en el que estic focalitzat actualment.</p><p>Em motiva participar en projectes que tinguin impacte més enllà del seu propòsit funcional, especialment relacionats amb el medi ambient, la cooperació i el canvi social.</p>",
 		"titles": {
 			"menu": ["inici", "formació", "experiència", "habilitats", "contacte"],
 			"about": "sobre mi",
@@ -253,13 +255,13 @@
 		"jobs": [
 			{
 				"company": "Gatamagat, SCCL",
-				"dates": [2020, "actulitat"],
+				"dates": [2020, "actualitat"],
 				"link": "https://recrea.team",
 				"name": "RecreaTeam",
 				"title": "Cocreació, programació i desenvolupament web",
 				"tasks": [
 					"Cocreació de jocs online",
-					"Desenvolupament plataforma i gestor de joc (Javascript, PHP, CSS, HTML, MySQL)",
+					"Desenvolupament web incloent panell de control (Javascript, PHP, CSS, HTML, MySQL)",
 					"Integració videoconferències (Jitsi)"
 				]
 			},
@@ -274,7 +276,7 @@
 					"Manteniment de les sales de joc",
 					"Gestió administrativa",
 					"Game Master",
-					"Progració jocs online (PHP, Telegram)"
+					"Programació jocs online (PHP, Telegram)"
 				]
 			},
 			{
@@ -284,6 +286,7 @@
 				"name": "",
 				"title": "Disseny, programació i muntatge elèctric",
 				"tasks": [
+					"Gestió de projectes",
 					"Disseny esquemes elèctrics i pneumàtics",
 					"Muntatge i posada en marxa de projectes de pesatge (envasadores, dosificadores, pesatge en línia)",
 					"Programació de robots dedicats a l'envasat de productes",
@@ -312,7 +315,7 @@
 				"tasks": [
 					"Elaboració i execució de projectes per la construcció de maquinària",
 					"Disseny mecànic previ per el·laboració d'ofertes (AutoCAD, Solid Edge)",
-					"Preparació de pressupostos, disseny definitiu d'ordres de treball, seguiment constructiu"
+					"Preparació de pressupostos, ordres de treball i seguiment constructiu"
 				]
 			}
 		]
