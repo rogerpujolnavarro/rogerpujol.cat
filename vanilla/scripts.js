@@ -121,7 +121,7 @@ const changeTexts = async (lang) => {
 
 // Configuració idioma pàgina
 const loadTexts = async () => {
-	let navigatorLang = navigator.language || navigator.userLanguage;
+	let navigatorLang = (navigator.language || navigator.userLanguage).toLowerCase();
 	navigatorLang = navigatorLang.includes('ca')
 		? 'ca'
 		: navigatorLang.includes('es')
@@ -194,23 +194,27 @@ const configColor = () => {
 };
 
 // Amaga-ensenya menú
-const showMenu = () => {
+const closeMenu = () => {
+	$('#show-menu').style.display = 'block';
+	$('#close-menu').style.display = 'none';
+	$('header').classList.remove('show');
+	$$('header div').forEach((el) => (el.style.display = el.removeAttribute('style')));
+};
+const eventsMenu = () => {
 	$('#show-menu').addEventListener('click', () => {
 		$('#show-menu').style.display = 'none';
 		$('#close-menu').style.display = 'block';
-
+		$('header').classList.add('show');
 		$$('header div').forEach((el) => (el.style.display = 'block'));
 	});
 	$('#close-menu').addEventListener('click', () => {
-		$('#show-menu').style.display = 'block';
-		$('#close-menu').style.display = 'none';
-
-		$$('header div').forEach((el) => (el.style.display = el.removeAttribute('style')));
+		closeMenu();
 	});
+	$$('header a').forEach((el) => el.addEventListener('click', () => closeMenu()));
 };
 
 // Crida funcions
 loadTexts();
 configMode();
 configColor();
-showMenu();
+eventsMenu();
