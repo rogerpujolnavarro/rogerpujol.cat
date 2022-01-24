@@ -27,8 +27,8 @@ const changeTexts = async (lang) => {
 	if (!data.length) {
 		// Titols
 		$('title').textContent = data[lang].titles.title;
-		$('#title').textContent = data[lang].titles.title;
-		$('#subtitle').textContent = data[lang].titles.subtitle;
+		$$('.title').forEach((elem) => (elem.textContent = data[lang].titles.title));
+		$$('.subtitle').forEach((elem) => (elem.textContent = data[lang].titles.subtitle));
 
 		// Menú
 		data[lang].titles.menu.forEach(
@@ -196,10 +196,16 @@ const configColor = () => {
 // Amaga-ensenya menú
 const showMenu = () => {
 	$('#show-menu').addEventListener('click', () => {
-		$('#show-menu').classList.toggle('rot180');
-		$$('header div:not(#menu > div)').forEach((el) =>
-			el.style.display === '' ? (el.style.display = 'block') : el.removeAttribute('style')
-		);
+		$('#show-menu').style.display = 'none';
+		$('#close-menu').style.display = 'block';
+
+		$$('header div').forEach((el) => (el.style.display = 'block'));
+	});
+	$('#close-menu').addEventListener('click', () => {
+		$('#show-menu').style.display = 'block';
+		$('#close-menu').style.display = 'none';
+
+		$$('header div').forEach((el) => (el.style.display = el.removeAttribute('style')));
 	});
 };
 

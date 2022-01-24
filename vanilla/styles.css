@@ -61,7 +61,7 @@ header {
     padding: 1rem;
 }
 
-header nav {
+header div:last-of-type {
     flex: 1;
     text-align: right;
     padding: 1rem;
@@ -92,10 +92,6 @@ header button {
     vertical-align: middle;
 }
 
-header div:not(#menu > div) {
-    display: block;
-}
-
 #mode-dark,
 #mode-light,
 #sel-color {
@@ -118,17 +114,24 @@ header div:not(#menu > div) {
     cursor: pointer;
 }
 
-#show-menu {
+#show-menu,
+#close-menu {
     display: none;
-}
-
-.rot180 {
-    transform: rotate(180deg);
 }
 
 header select option {
     background-color: var(--primary);
     font-weight: 700;
+}
+
+header .title,
+header .subtitle {
+    display: block;
+}
+
+main .title,
+main .subtitle {
+    display: none;
 }
 
 
@@ -248,16 +251,11 @@ footer {
         flex-direction: column-reverse;
     }
 
-    header div:not(#menu > div) {
+    header div {
         display: none;
     }
 
     header nav {
-        display: flex;
-        align-items: center;
-    }
-
-    header nav div {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -265,13 +263,25 @@ footer {
 
     #show-menu {
         display: block;
+    }
+
+    #show-menu,
+    #close-menu {
         height: 30px;
         width: 30px;
         cursor: pointer;
     }
 
-    #subtitle {
-        text-align: center;
+    header .title,
+    header .subtitle {
+        display: none;
+    }
+
+    main .title,
+    main .subtitle {
+        display: block;
+        padding: 0 5%;
+        margin-top: 0.5rem
     }
 
     main {
