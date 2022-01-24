@@ -27,7 +27,7 @@
 		{ "skill": "Trello", "value": 60 }
 	],
 	"en": {
-		"about": "<p>Curious and passionate about the engineering field, I'm looking forward to new professional project allowing me to acquire new knowledge within the web programming area.</p><p>The last ten years, the engineering work field has provided me the possibility to explore a vast range of specialties, such as mechanical design, project management and electronics. During the last period, I've been specially focused on programming, work field that I'm going deeper into.</p><p>I'm keen to participate in this kind of projects going beyond a functional purpose, particularly if they are related to environmentalism, human cooperation, and social change.</p>",
+		"about": "<p>Curious and passionate about the engineering field, I'm looking forward to a new professional project allowing me to acquire new knowledge within the web programming area.</p><p>The last ten years, the engineering work field has provided me the possibility to explore a vast range of specialties, such as mechanical design, project management and electronics. During the last period, I've been specially focused on programming, work field that I'm going deeper into.</p><p>I'm keen to participate in this kind of projects going beyond a functional purpose, particularly if they are related to environmentalism, human cooperation, and social change.</p>",
 		"titles": {
 			"menu": ["home", "education", "experience", "skills", "contact"],
 			"about": "about",
@@ -224,7 +224,7 @@
 		]
 	},
 	"ca": {
-		"about": "<p>Curiós i apassionat del món de l'enginyeria, busco un nou projecte professional que em permeti endinsar-me en nous projectes i aprenentatges en el camp de la programació web.</p><p>Els últims 10 anys, el món de l'enginyeria m'ha aportat la possibilitat d'explorar molts camps diferents, com ara el disseny mecànic, la gestió de projectes i l'electrònica. Els últims temps he estat centrat en programació, camp d'especialització en el que estic focalitzat actualment.</p><p>Em motiva participar en projectes que tinguin impacte més enllà del seu propòsit funcional, especialment relacionats amb el medi ambient, la cooperació i el canvi social.</p>",
+		"about": "<p>Curiós i apassionat del món de l'enginyeria, busco un nou projecte professional que em permeti endinsar-me en nous projectes i aprenentatges en el camp de la programació web.</p><p>Els últims 10 anys, el món de l'enginyeria m'ha aportat la possibilitat d'explorar molts camps diferents, com ara el disseny mecànic, la gestió de projectes i l'electrònica. Els últims temps he estat centrat en programació, camp d'especialització en el qual estic focalitzat actualment.</p><p>Em motiva participar en projectes que tinguin impacte més enllà del seu propòsit funcional, especialment relacionats amb el medi ambient, la cooperació i el canvi social.</p>",
 		"titles": {
 			"menu": ["inici", "formació", "experiència", "habilitats", "contacte"],
 			"about": "sobre mi",
@@ -313,8 +313,8 @@
 				"name": "",
 				"title": "Disseny de projectes",
 				"tasks": [
-					"Elaboració i execució de projectes per la construcció de maquinària",
-					"Disseny mecànic previ per el·laboració d'ofertes (AutoCAD, Solid Edge)",
+					"Elaboració i execució de projectes per a la construcció de maquinària",
+					"Disseny mecànic previ per a l'el·laboració d'ofertes (AutoCAD, Solid Edge)",
 					"Preparació de pressupostos, ordres de treball i seguiment constructiu"
 				]
 			}
