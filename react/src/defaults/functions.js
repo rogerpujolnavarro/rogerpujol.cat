@@ -1,0 +1,8 @@
+const getLocal = (varName) => {
+	return localStorage.getItem(varName) ? JSON.parse(localStorage.getItem(varName)) : false;
+};
+const saveLocal = (varName, data) => {
+	localStorage.setItem(varName, JSON.stringify(data));
+};
+
+export { getLocal, saveLocal };
