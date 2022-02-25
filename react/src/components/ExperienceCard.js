@@ -1,5 +1,5 @@
 const ExperienceCard = () => {
-	return <div>ExperienceCard</div>;
+	return <div className="job">ExperienceCard</div>;
 };
 
 export default ExperienceCard;

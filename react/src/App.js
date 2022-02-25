@@ -1,9 +1,14 @@
 // react
 import { useState } from 'react';
 // components
+import Contact from './components/Contact';
+import CoverLetter from './components/CoverLetter';
+import Education from './components/Education';
+import Experience from './components/Experience';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import Section from './components/Section';
+import Portfolio from './components/Portfolio';
+import Skills from './components/Skills';
 // contexts
 import SettingsContext from './contexts/SettingsContext';
 // defaults
@@ -32,7 +37,12 @@ function App() {
 			}}
 		>
 			<Header />
-			<Section />
+			<CoverLetter />
+			<Education />
+			<Experience />
+			<Skills />
+			<Portfolio />
+			<Contact />
 			<Footer />
 		</SettingsContext.Provider>
 	);

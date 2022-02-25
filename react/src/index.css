@@ -29,6 +29,18 @@ body>* {
   width: 100%;
 }
 
+.job {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  background-color: var(--light);
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 /* Footer */
 footer {
   text-align: right;
