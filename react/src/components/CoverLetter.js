@@ -6,7 +6,7 @@ import DataContext from '../contexts/DataContext';
 const CoverLetter = () => {
 	const { texts } = useContext(DataContext);
 
-	return <section>{texts && texts.about}</section>;
+	return <>{texts && <section>{texts.about}</section>}</>;
 };
 
 export default CoverLetter;

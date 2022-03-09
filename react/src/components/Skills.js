@@ -4,11 +4,16 @@ import { useContext } from 'react';
 import DataContext from '../contexts/DataContext';
 
 const Skills = () => {
-	const { skills } = useContext(DataContext);
+	const { skills, texts } = useContext(DataContext);
 	return (
-		<section>
-			{skills && skills.map((skill, index) => <span key={index}>{skill.skill}</span>)}
-		</section>
+		<>
+			{texts && (
+				<section id={texts.titles.menu[3]}>
+					<h3>{texts.titles.menu[3]}</h3>
+					{skills && skills.map((skill, index) => <span key={index}>{skill.skill}</span>)}
+				</section>
+			)}
+		</>
 	);
 };
 
