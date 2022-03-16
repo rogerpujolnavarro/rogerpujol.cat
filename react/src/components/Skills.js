@@ -10,7 +10,21 @@ const Skills = () => {
 			{texts && (
 				<section id={texts.titles.menu[3]}>
 					<h3>{texts.titles.menu[3]}</h3>
-					{skills && skills.map((skill, index) => <span key={index}>{skill.skill}</span>)}
+					<div className="skills">
+						{skills.map((skill, index) => (
+							<div key={`div-${index}`} className="skill">
+								<label key={`label-${index}`} htmlFor={skill.skill}>
+									{skill.skill}
+								</label>
+								<progress
+									key={`progress-${index}`}
+									id={skill.skill}
+									value={skill.value}
+									max="100"
+								></progress>
+							</div>
+						))}
+					</div>
 				</section>
 			)}
 		</>
