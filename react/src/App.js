@@ -81,9 +81,9 @@ function App() {
 					<hr />
 					<Experience />
 					<hr />
-					<Skills />
-					<hr />
 					<Portfolio />
+					<hr />
+					<Skills />
 					<hr />
 					<Contact />
 				</main>

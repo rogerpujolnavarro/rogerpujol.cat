@@ -8,8 +8,8 @@ const Contact = () => {
 	return (
 		<>
 			{texts && (
-				<section id={texts.titles.menu[4]}>
-					<h3>{texts.titles.menu[4]}</h3>
+				<section id={texts.titles.menu[5]}>
+					<h3>{texts.titles.menu[5]}</h3>
 				</section>
 			)}
 		</>

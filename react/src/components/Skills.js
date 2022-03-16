@@ -8,8 +8,8 @@ const Skills = () => {
 	return (
 		<>
 			{texts && (
-				<section id={texts.titles.menu[3]}>
-					<h3>{texts.titles.menu[3]}</h3>
+				<section id={texts.titles.menu[4]}>
+					<h3>{texts.titles.menu[4]}</h3>
 					<div className="skills">
 						{skills.map((skill, index) => (
 							<div key={`div-${index}`} className="skill">
