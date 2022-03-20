@@ -11,7 +11,7 @@ const Education = () => {
 				<section id={texts.titles.menu[1]}>
 					<h3>{texts.titles.menu[1]}</h3>
 					{texts.education
-						.sort((course1, course2) => course1.year - course2.year)
+						.sort((course1, course2) => course2.year - course1.year)
 						.map((course, index) => (
 							<div key={`p-${index}`}>
 								<h4>{course.title}</h4>
