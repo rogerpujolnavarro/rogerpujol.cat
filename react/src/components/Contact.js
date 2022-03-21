@@ -33,7 +33,7 @@ const Contact = () => {
 						</span>
 						<span>
 							<FiDownload />
-							<a href={`/cv_${language}.pdf`} target="_blank" rel="noreferrer">
+							<a href={`/pdf/cv_${language}.pdf`} target="_blank" rel="noreferrer">
 								pdf
 							</a>
 						</span>
