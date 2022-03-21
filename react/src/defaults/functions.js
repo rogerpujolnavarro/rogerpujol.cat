@@ -5,4 +5,8 @@ const saveLocal = (varName, data) => {
 	localStorage.setItem(varName, JSON.stringify(data));
 };
 
-export { getLocal, saveLocal };
+const setDocumentColor = (name, color) => {
+	document.documentElement.style.setProperty(`--${name}`, color);
+};
+
+export { getLocal, saveLocal, setDocumentColor };

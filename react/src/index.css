@@ -82,25 +82,18 @@ nav a:hover {
 }
 
 header div,
-header button {
+header .button-icon {
   margin: 0 1rem;
 }
 
-header button {
+.button-icon {
   cursor: pointer;
-  border: 0;
-  background-color: transparent;
   vertical-align: middle;
-}
-
-#mode-dark,
-#mode-light,
-#sel-color {
   color: var(--dark);
-  display: block;
+  font-size: 1.5rem;
 }
 
-#lang {
+header select {
   appearance: none;
   -webkit-appearance: none;
   background-color: transparent;
@@ -113,11 +106,7 @@ header button {
   font-family: inherit;
   font-size: inherit;
   cursor: pointer;
-}
-
-#show-menu,
-#close-menu {
-  display: none;
+  user-select: none;
 }
 
 header select option {

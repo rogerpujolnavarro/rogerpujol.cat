@@ -13,7 +13,8 @@ import Skills from './components/Skills';
 import DataContext from './contexts/DataContext';
 import SettingsContext from './contexts/SettingsContext';
 // defaults
-import { getLocal } from './defaults/functions';
+import { getLocal, saveLocal, setDocumentColor } from './defaults/functions';
+import { colors, dark, light } from './defaults/parameters';
 // firebase
 import { initializeApp } from 'firebase/app';
 import { getDatabase, ref, onValue } from 'firebase/database';
@@ -21,12 +22,32 @@ import { getDatabase, ref, onValue } from 'firebase/database';
 function App() {
 	// states
 	const [language, setLanguage] = useState(getLocal('language') ? getLocal('language') : 'ca');
-	const [mode, setMode] = useState(
-		getLocal('mode') ? getLocal('mode') : { dark: true, color: '#2a9d8f' }
-	);
-	const [bbdd, setBbdd] = useState('');
+	const [mode, setMode] = useState('');
+
+	// page configuration
+	const changeLanguage = (ev) => {
+		const newLanguage = ev.target.value;
+		saveLocal('language', newLanguage);
+		setLanguage(newLanguage);
+	};
+	const changeMode = (newMode) => {
+		if (newMode.dark) {
+			setDocumentColor('dark', `${light}dd`);
+			setDocumentColor('light', `${dark}dd`);
+		} else {
+			setDocumentColor('light', light);
+			setDocumentColor('dark', dark);
+		}
+		setDocumentColor('primary', newMode.color);
+		saveLocal('mode', newMode);
+		setMode(newMode);
+	};
+	useEffect(() => {
+		changeMode(getLocal('mode') ? getLocal('mode') : { dark: true, color: colors[0] });
+	}, []);
 
 	// data from firebase
+	const [bbdd, setBbdd] = useState('');
 	useEffect(() => {
 		const firebaseConfig = {
 			apiKey: 'AIzaSyB6aHCipYl4xkrArFseQ1HH_cRDY67kYJs',
@@ -49,13 +70,6 @@ function App() {
 	useEffect(() => {
 		console.log(bbdd);
 	}, [bbdd]);
-
-	const changeLanguage = (newLanguage) => {
-		setLanguage(newLanguage);
-	};
-	const changeMode = (newMode) => {
-		setMode(newMode);
-	};
 
 	return (
 		<DataContext.Provider
