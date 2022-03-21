@@ -13,7 +13,7 @@ const Education = () => {
 					{texts.education
 						.sort((course1, course2) => course2.year - course1.year)
 						.map((course, index) => (
-							<div key={`p-${index}`}>
+							<div key={`p-${index}`} className="education">
 								<h4>{course.title}</h4>
 								<span key={`span-${index}`}>{course.school}</span> (
 								<a

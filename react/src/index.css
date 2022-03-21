@@ -38,11 +38,6 @@ footer {
   padding: 1rem 20%;
 }
 
-p {
-  margin: 1.5rem 0;
-  text-align: justify;
-}
-
 hr {
   width: 150px;
   margin-left: 20%;
@@ -137,6 +132,10 @@ section a {
 
 section a:hover {
   color: var(--dark);
+}
+
+section .education {
+  margin: 1.5rem 0;
 }
 
 section .skills,
