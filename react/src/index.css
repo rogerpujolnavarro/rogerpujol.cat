@@ -206,7 +206,8 @@ section .job li::before {
   content: "⌁ ";
 }
 
-section .feather {
+section .info svg {
+  font-size: 1.5rem;
   vertical-align: top;
   margin-right: 0.5rem;
 }
