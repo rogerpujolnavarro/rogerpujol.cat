@@ -1,17 +1,20 @@
+// react
+import { useContext } from 'react';
+// contexts
+import DataContext from '../contexts/DataContext';
+
 const Footer = () => {
+	const { contact } = useContext(DataContext);
+
 	return (
 		<footer>
 			<nav>
-				<a
-					href="https://www.linkedin.com/in/rogerpujolnavarro/"
-					target="_blank"
-					rel="noreferrer"
-				>
-					linkedin
-				</a>
-				<a href="https://github.com/rogerpujolnavarro" target="_blank" rel="noreferrer">
-					github
-				</a>
+				{contact &&
+					contact.links.map((link, index) => (
+						<a key={index} href={link.link} target="_blank" rel="noreferrer">
+							{link.name}
+						</a>
+					))}
 			</nav>
 		</footer>
 	);
