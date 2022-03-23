@@ -29,7 +29,8 @@
   width: 100%;
 }
 
-h3 {
+h3,
+h4 {
   letter-spacing: 0.2rem;
 }
 
@@ -55,6 +56,7 @@ header {
   align-items: center;
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
   padding: 1rem;
+  z-index: 100;
 }
 
 header div:last-of-type {
@@ -138,20 +140,74 @@ section div {
   margin: 1.5rem 0;
 }
 
-section .skills,
 section .jobs {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-}
-
-section .jobs {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
-section .info {
+section .job {
   display: flex;
-  gap: 3rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  background-color: var(--light);
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+section .job ul {
+  list-style: none;
+}
+
+section .job li {
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+section .job li::before {
+  content: "⌁ ";
+}
+
+section .projects {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+section .projects img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: var(--dark) 2px solid;
+  opacity: 0.2;
+}
+
+section .projects .project {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+section .projects .project div {
+  transform: translateX(-150px);
+}
+
+section .projects .project:hover img {
+  opacity: 1;
+}
+
+section .projects .project:hover div {
+  transform: translateX(10px);
+}
+
+section .skills {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 }
 
 section .skill {
@@ -179,29 +235,9 @@ section .skill progress {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-section .job {
+section .info {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center;
-  gap: 1rem;
-  background-color: var(--light);
-  padding: 2rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-section .job ul {
-  list-style: none;
-}
-
-section .job li {
-  text-align: left;
-  margin-top: 0.5rem;
-}
-
-section .job li::before {
-  content: "⌁ ";
+  gap: 3rem;
 }
 
 section .info svg {
