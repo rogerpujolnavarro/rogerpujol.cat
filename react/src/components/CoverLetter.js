@@ -10,7 +10,7 @@ const CoverLetter = () => {
 		<>
 			{texts && (
 				<section>
-					<p>{texts.about}</p>
+					<div>{texts.about}</div>
 				</section>
 			)}
 		</>
