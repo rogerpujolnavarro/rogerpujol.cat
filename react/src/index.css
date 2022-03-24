@@ -205,34 +205,12 @@ section .projects .project:hover div {
 }
 
 section .skills {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-}
-
-section .skill {
+  width: 50%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-progress::-webkit-progress-bar {
-  background-color: var(--light);
-  width: 100%;
-}
-
-progress::-webkit-progress-value {
-  background: repeating-linear-gradient(90deg, var(--primary), var(--primary) 8px, var(--light) 5px, var(--light) 12px);
-}
-
-section .skill progress {
-  -webkit-appearance: none;
-  appearance: none;
-  max-width: 90px;
-  background: var(--light) !important;
-  margin-top: 0.25rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+  gap: 0.25rem;
 }
 
 section .info {
