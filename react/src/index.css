@@ -140,6 +140,39 @@ section div {
   margin: 1.5rem 0;
 }
 
+section .projects {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+}
+
+section .projects img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: var(--dark) 2px solid;
+  opacity: 0.2;
+}
+
+section .projects .project {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+section .projects .project div {
+  transform: translateX(-100px);
+}
+
+section .projects .project:hover img {
+  opacity: 1;
+}
+
+section .projects .project:hover div {
+  transform: translateX(10px);
+}
+
 section .jobs {
   display: grid;
   gap: 2rem;
@@ -171,39 +204,6 @@ section .job li::before {
   content: "⌁ ";
 }
 
-section .projects {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-}
-
-section .projects img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: var(--dark) 2px solid;
-  opacity: 0.2;
-}
-
-section .projects .project {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  cursor: pointer;
-}
-
-section .projects .project div {
-  transform: translateX(-150px);
-}
-
-section .projects .project:hover img {
-  opacity: 1;
-}
-
-section .projects .project:hover div {
-  transform: translateX(10px);
-}
-
 section .skills {
   width: 50%;
   display: flex;
@@ -211,6 +211,10 @@ section .skills {
   align-items: center;
   flex-wrap: wrap;
   gap: 0.25rem;
+}
+
+section .skills span::after {
+  content: " ⌁";
 }
 
 section .info {
@@ -302,6 +306,10 @@ footer {
 
   main {
     margin-top: 0;
+  }
+
+  section .skills {
+    width: 100%;
   }
 
   section .info {

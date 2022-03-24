@@ -12,7 +12,7 @@ const Skills = () => {
 					<h3>{texts.titles.menu[4]}</h3>
 					<div className="skills">
 						{skills.map((skill) => (
-							<span key={skill.skill}>{skill.skill} ⌁</span>
+							<span key={skill.skill}>{skill.skill}</span>
 						))}
 					</div>
 				</section>
