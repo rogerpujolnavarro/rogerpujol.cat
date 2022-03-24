@@ -5,7 +5,7 @@ import DataContext from '../contexts/DataContext';
 
 const Portfolio = () => {
 	const { texts } = useContext(DataContext);
-	texts && console.log(texts.projects);
+
 	return (
 		<>
 			{texts && (

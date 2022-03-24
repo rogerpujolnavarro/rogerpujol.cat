@@ -23,7 +23,7 @@ function App() {
 	// states
 	const [language, setLanguage] = useState(getLocal('language') ? getLocal('language') : 'ca');
 	const [mode, setMode] = useState('');
-	const [showMenuBar, setShowMenuBar] = useState(true);
+	const [showMenuBar, setShowMenuBar] = useState(false);
 
 	// page configuration
 	const changeLanguage = (ev) => {
@@ -72,10 +72,6 @@ function App() {
 		});
 	}, []);
 
-	useEffect(() => {
-		console.log(bbdd);
-	}, [bbdd]);
-
 	return (
 		<DataContext.Provider
 			value={{
@@ -97,8 +93,8 @@ function App() {
 				<Header />
 				<main>
 					<div className="mobile-title">
-						<h2>{bbdd[language].titles.title}</h2>
-						<h4>{bbdd[language].titles.subtitle}</h4>
+						<h2>{bbdd && bbdd[language].titles.title}</h2>
+						<h4>{bbdd && bbdd[language].titles.subtitle}</h4>
 					</div>
 					<CoverLetter />
 					<hr />
