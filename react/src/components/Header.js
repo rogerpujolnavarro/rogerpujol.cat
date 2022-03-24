@@ -9,7 +9,8 @@ import { colors } from '../defaults/parameters';
 
 const Header = () => {
 	const { texts } = useContext(DataContext);
-	const { language, mode, onChangeLanguage, onChangeMode } = useContext(SettingsContext);
+	const { language, mode, showMenuBar, onChangeLanguage, onChangeMode, onChangeMenuBar } =
+		useContext(SettingsContext);
 
 	const rndColor = (colors) => {
 		return colors[Math.floor(Math.random() * colors.length)];
@@ -18,7 +19,7 @@ const Header = () => {
 	return (
 		<>
 			{texts && (
-				<header>
+				<header className={showMenuBar ? 'show' : ''}>
 					<div>
 						<select onInput={onChangeLanguage} defaultValue={language}>
 							<option value="ca">ca</option>
@@ -47,21 +48,24 @@ const Header = () => {
 						/>
 					</div>
 
-					<div>
+					<div className="title">
 						<h1>{texts.titles.title}</h1>
 						<h3>{texts.titles.subtitle}</h3>
 					</div>
-					<div>
-						<nav>
-							{texts.titles.menu.map((navItem, index) => (
-								<a key={index} href={`#${index !== 0 ? navItem : ''}`}>
-									{navItem}
-								</a>
-							))}
-						</nav>
+					<nav>
+						{texts.titles.menu.map((navItem, index) => (
+							<a key={index} href={`#${index !== 0 ? navItem : ''}`}>
+								{navItem}
+							</a>
+						))}
+					</nav>
+					<div className="navbar-toggler-icon">
+						{showMenuBar ? (
+							<FiX onClick={onChangeMenuBar} />
+						) : (
+							<FiMenu onClick={onChangeMenuBar} />
+						)}
 					</div>
-					<FiMenu className="button-icon" />
-					<FiX className="button-icon" />
 				</header>
 			)}
 		</>

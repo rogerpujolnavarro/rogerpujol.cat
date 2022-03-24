@@ -23,6 +23,7 @@ function App() {
 	// states
 	const [language, setLanguage] = useState(getLocal('language') ? getLocal('language') : 'ca');
 	const [mode, setMode] = useState('');
+	const [showMenuBar, setShowMenuBar] = useState(true);
 
 	// page configuration
 	const changeLanguage = (ev) => {
@@ -45,6 +46,10 @@ function App() {
 	useEffect(() => {
 		changeMode(getLocal('mode') ? getLocal('mode') : { dark: true, color: colors[0] });
 	}, []);
+
+	const changeMenuBar = () => {
+		setShowMenuBar(!showMenuBar);
+	};
 
 	// data from firebase
 	const [bbdd, setBbdd] = useState('');
@@ -83,12 +88,18 @@ function App() {
 				value={{
 					language: language,
 					mode: mode,
+					showMenuBar: showMenuBar,
 					onChangeLanguage: changeLanguage,
 					onChangeMode: changeMode,
+					onChangeMenuBar: changeMenuBar,
 				}}
 			>
 				<Header />
 				<main>
+					<div className="mobile-title">
+						<h2>{bbdd[language].titles.title}</h2>
+						<h4>{bbdd[language].titles.subtitle}</h4>
+					</div>
 					<CoverLetter />
 					<hr />
 					<Education />
