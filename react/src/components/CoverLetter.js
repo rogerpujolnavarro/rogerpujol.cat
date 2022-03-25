@@ -10,7 +10,11 @@ const CoverLetter = () => {
 		<>
 			{texts && (
 				<section>
-					<div>{texts.about}</div>
+					<div>
+						{texts.about.map((paragraph, index) => (
+							<p key={index}>{paragraph}</p>
+						))}
+					</div>
 				</section>
 			)}
 		</>

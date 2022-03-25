@@ -46,6 +46,10 @@ hr {
   border-bottom: 1px solid var(--dark);
 }
 
+p {
+  margin: 1rem 0;
+}
+
 /* Capçalera */
 header {
   position: fixed;
