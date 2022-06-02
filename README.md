@@ -46,3 +46,6 @@
 >  * * *  
 
 ```📧 hola@rogerpujol.cat```
+
+### License
+[LICENSE](https://github.com/rogerpujolnavarro/rogerpujol.cat/blob/master/LICENSE.md)
